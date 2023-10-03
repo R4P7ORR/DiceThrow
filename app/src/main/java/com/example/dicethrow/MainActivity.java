@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
         toggle1dice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dice2.setVisibility(View.GONE);
+                dice1.setVisibility(View.GONE);
                 diceAre2 = false;
             }
         });
         toggle2dice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dice2.setVisibility(View.VISIBLE);
+                dice1.setVisibility(View.VISIBLE);
                 diceAre2 = true;
             }
         });
@@ -98,13 +98,13 @@ public class MainActivity extends AppCompatActivity {
                     dice1.setImageResource(R.drawable.kocka3);
                     break;
                 case 4:
-                    dice1.setImageResource(R.drawable.kocka3);
+                    dice1.setImageResource(R.drawable.kocka4);
                     break;
                 case 5:
-                    dice1.setImageResource(R.drawable.kocka3);
+                    dice1.setImageResource(R.drawable.kocka5);
                     break;
                 case 6:
-                    dice1.setImageResource(R.drawable.kocka3);
+                    dice1.setImageResource(R.drawable.kocka6);
                     break;
             }
             switch (throw2) {
@@ -118,13 +118,13 @@ public class MainActivity extends AppCompatActivity {
                     dice2.setImageResource(R.drawable.kocka3);
                     break;
                 case 4:
-                    dice2.setImageResource(R.drawable.kocka3);
+                    dice2.setImageResource(R.drawable.kocka4);
                     break;
                 case 5:
-                    dice2.setImageResource(R.drawable.kocka3);
+                    dice2.setImageResource(R.drawable.kocka5);
                     break;
                 case 6:
-                    dice2.setImageResource(R.drawable.kocka3);
+                    dice2.setImageResource(R.drawable.kocka6);
                     break;
             }
             String toastString = String.valueOf(result1+result2);
